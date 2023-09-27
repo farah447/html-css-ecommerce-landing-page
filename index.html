@@ -5,6 +5,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+  name="description"
+  content="This website is about B&B Bakery, where you can discover amazing products at great prices." />
+  <meta name="keywords" content="Bakery, Bakery shop" />
   <link rel="stylesheet" href="dist/style.css">
   <title>SCSS Project</title>
 </head>
@@ -15,7 +19,7 @@
         <div class="logo">
             <img src="logo.png" height="90" alt="Ecommerce Logo">
         </div>
-        <nav>
+        <nav id="header-nav" aria-label="header navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
@@ -28,30 +32,38 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Welcome to B&B Store</h1>
-      <p>Discover amazing products at great prices.</p>
-      <button href="#" class="cta-button">Shop Now</button>
+      <div>
+        <h1>Welcome to B&B Store</h1>
+        <p>Discover amazing products at great prices.</p>
+        <button href="#" class="cta-button">Shop Now</button>
+      </div>
     </section>
 
     <!-- Product Showcase Section -->
     <section class="product-showcase">
       <div class="product">
         <img src="Chocolate chip cookies.jpg" height="150" alt="Image Chocolate chip cookies">
-        <h2>Chocolate chip cookies</h2>
         <!--Image src: https://pin.it/1ril4yo-->
-        <p>Chocolate chip cookies are made from buttery dough studded with chunks of melted chocolate.</p>
+        <div class = "product-content">
+          <h2>Chocolate chip cookies</h2>
+          <p>Chocolate chip cookies are made from buttery dough studded with chunks of melted chocolate.</p>
+        </div>
       </div>
       <div class="product">
         <img src="Durum wheat bread.jpg" height="150" alt="Image Durum wheat bread">
-        <h2>Durum wheat bread</h2>
         <!--Image src: https://pin.it/64oJFHf-->
-        <p>a crunchy and golden crust, with a soft and light yellow crumb. </p>
+        <div class = "product-content">
+          <h2>Durum wheat bread</h2>
+          <p>a crunchy and golden crust, with a soft and light yellow crumb. </p>
+        </div>
       </div>
       <div class="product">
         <img src="French Brioche Loaf.jpg" height="150" alt="Image French Brioche Loaf">
         <!--Image src: https://pin.it/1m4d7tr-->
-        <h2>French Brioche Loaf</h2>
-        <p>A delicious French Brioche Loaf which is soft and buttery.</p>
+        <div class = "product-content">
+          <h2>French Brioche Loaf</h2>
+          <p>A delicious French Brioche Loaf which is soft and buttery.</p>
+        </div>
       </div>
     </section>
 
@@ -72,10 +84,14 @@
     <section class="newsletter">
       <h2>Subscribe to Our Newsletter</h2>
       <form class="post">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="first name"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="last name"><br><br>
+        <div> 
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="first name"><br>
+        </div>
+        <div>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="last name"><br><br>
+        </div>
         <input type="email" name="email" placeholder="Your Email">
         <button type="submit">Subscribe</button>
       </form>
