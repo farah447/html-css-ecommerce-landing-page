@@ -165,8 +165,8 @@ header nav a:hover {
 
 /* Hover effect for the review */
 .review:hover {
-  transform: scale(1.05); /* Increase the size of the review box on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .review p {
