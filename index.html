@@ -9,20 +9,16 @@
   name="description"
   content="This website is about B&B Bakery, where you can discover amazing products at great prices." />
   <meta name="keywords" content="Bakery, Bakery shop" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha384-VkBYOTdFWt8l8Ftoz6f5J8xVUO5Ffbf/uMAeklvON5kRuCiV/kWRL08KGffz4SO" crossorigin="anonymous">
   <link rel="stylesheet" href="dist/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
   <title>SCSS Project</title>
 </head>
 <body>
   <header class="header">
     <!--<h1>Welcome to my SCSS Project</h1>-->
       <!-- Header Section -->
-        <div class="logo">
-            <img src="B&B logo.png" height="90" alt="Ecommerce Logo">
-        </div>
+        <img src="nav-logo.png" height="90" alt="B&B Bakery Logo">     
         <nav aria-label="header navigation">
           <div id="header-nav">
             <ul>
@@ -36,13 +32,16 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section -->  
     <section class="hero">
       <div>
         <h1>Welcome to B&B Store</h1>
         <p>Discover amazing products at great prices.</p>
         <button href="#" class="cta-button">Shop Now</button>
       </div>
+      <div class="top-logo">
+        <img src="image-header.png" height="100%" width="100%" alt="B&B Bakery Logo"> 
+      </div> 
     </section>
 
     <!-- Product Showcase Section -->
@@ -94,17 +93,7 @@
       <h2>Subscribe to Our Newsletter</h2>
       <form class="post">
         <div class="name-container">
-          <div class="input-wrapper">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
-          </div>
-          <div class="input-wrapper">
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
-          </div>
-        </div>
-        <div>
-          <label for="email">Email:</label><br>
+          <label for="email">Enter your email to receive the offers!</label><br><br>
           <input type="email" id="email" name="email" placeholder="Enter your email address" required>
           <button type="submit">Subscribe</button>
         </div>
@@ -114,13 +103,15 @@
   <!-- Footer Section -->
   <footer>
     <div class="contact-info">
-      <p>Contact Us: B&B@example.com</p>
+      <p>Contact Us: </p>
     </div>
     <div class="social-icons">
-      <a href="#"><img src="email.png"  height="50"  alt="Email"></a>
-      <a href="#"><img src="facebook.png"  height="50"  alt="Facebook"></a>
-      <a href="#"><img src="x.png"  height="50"  alt="Twitter"></a>
-      <a href="#"><img src="insta.png"  height="50"  alt="Instagram"></a>
+      <ul>
+        <li><a href="#"><img src="mail.png"  height="50"  alt="mail"></a></li>
+        <li><a href="#"><img src="facebook.png"  height="50"  alt="Facebook"></a></li>
+        <li><a href="#"><img src="twitter.png"  height="50"  alt="Twitter"></a></li>
+        <li><a href="#"><img src="instagram.png"  height="50"  alt="Instagram"></a></li>
+      </ul>
     </div>
     <div class="footer-links">
       <ul>

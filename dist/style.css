@@ -62,18 +62,29 @@ header nav a:hover {
 /* Hero section styles */
 .hero {
   text-align: center;
-  padding: 5em 0;
+  padding: 0.5em 0em 3em;
   color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero h1 { 
+  margin-left: 60px;
+  font-size: 2.3rem;
   margin-bottom: 2rem;
 }
 
 .hero p {
+  margin-left: 60px;
   font-size: 1.2rem;
   margin-bottom: 3rem;
+}
+
+.top-logo{
+  margin-left: 190px;
+  height: 400px;
+  width: 535px;
 }
 
 .hero .cta-button {
@@ -141,8 +152,8 @@ header nav a:hover {
 
 /* Customer Reviews section styles */
 .customer-reviews {
-  background-color: #878686;
-  color: #fff;
+  background-color: #dadada;
+  color: #000000;
   text-align: center;
   padding: 50px 0;
 }
@@ -163,10 +174,9 @@ header nav a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for the review */
 .review:hover {
-  transform: scale(1.05); /* Increase the size of the review box on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .review p {
@@ -214,58 +224,65 @@ header nav a:hover {
   background-color: #ffa600;
 }
 
+/* Add a focus outline for visibility */
 input[type="email"]:focus,
 button:focus {
-  outline: 2px solid #007bff; /* Add a focus outline for visibility */
+  outline: 2px solid #007bff; 
 }
 
-/* CSS for the layout of "First Name" and "Last Name" inputs */
-.name-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px; /* Adjust the gap between the inputs */
-  margin-left: 395px;
-  margin-right: 395px;
-}
-
-.input-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-wrapper label {
-  margin-bottom: 5px;
-}
-
-/* Footer section styles */
+/* Footer Section */
 footer {
-  background-color: #e0e0e0;
-  color: #000000;
-  padding: 2em 0;
-  text-align: center;
-  line-height: 80px;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer ul li {
-  display: inline;
-  margin-right: 1rem;
-}
-
-footer a {
-  text-decoration: none;
-  color: #000000;
-}
-
-/* Footer section styles */
-footer {
-  background-color: #d5d4d4;
+  background-color: #878686;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+}
+
+.contact-info{
+  height: 70px;
+  font-size: 30px;
+}
+
+.social-icons {
+  height: 80px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 20px;
+  transition: transform 0.3s ease; /* Add a transform transition effect */
+}
+
+/* Add hover effect for social media icons */
+.social-icons li:hover {
+  box-shadow: 0 2px 4px #ffd485;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links a:hover{
+  color: #ffa600;
 }
 /*# sourceMappingURL=style.css.map */
