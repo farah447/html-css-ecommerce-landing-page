@@ -175,11 +175,7 @@ header nav a:hover {
 }
 
 .review:hover {
-<<<<<<< HEAD
   transform: scale(1.05); 
-=======
-  transform: scale(1.05);
->>>>>>> 564eb23aa24d0d785adc349280a143c8b5047271
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
