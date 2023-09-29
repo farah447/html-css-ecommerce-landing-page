@@ -1,0 +1,59 @@
+.hero {
+    text-align: center;
+    padding: 0.5em 0em 3em;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+  
+    h1 {
+      margin-left: 60px;
+      font-size: 2.3rem;
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      margin-left: 60px;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  
+    .cta-button {
+      @include button-styles; // Reuse button styles with a mixin
+    }
+}
+
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f7f7f7;
+    line-height: 30px;
+  
+    .product {
+      flex: 0 0 calc(33.33% - 20px);
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+  
+      .product-button {
+        @include button-styles; // Reuse button styles with a mixin
+      }
+    }
+}
+  

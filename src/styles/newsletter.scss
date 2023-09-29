@@ -1,0 +1,24 @@
+.newsletter {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 5em 0;
+    line-height: 30px;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    input[type="email"] {
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    button {
+      @include button-styles; // Reuse button styles with a mixin
+    }
+  }
+  
