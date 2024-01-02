@@ -3,6 +3,7 @@
   font-family: 'Source Serif 4', serif;
   box-sizing: border-box;
   margin: 0rem;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 768px) {

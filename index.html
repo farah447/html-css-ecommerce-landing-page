@@ -18,14 +18,14 @@
   <header class="header">
     <!--<h1>Welcome to my SCSS Project</h1>-->
       <!-- Header Section -->
-        <img src="nav-logo.png" height="90" alt="B&B Bakery Logo">     
+        <img src="image/nav-logo.png" height="90" alt="B&B Bakery Logo">     
         <nav aria-label="header navigation">
           <div id="header-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#product-showcase">Shop</a></li>
+              <li><a href="#customer-reviews">Reviews</a></li>
+              <li><a href="#contact-info">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -33,21 +33,18 @@
 
   <main>
     <!-- Hero Section -->  
-    <section class="hero">
+    <section id="hero" class="hero">
       <div>
         <h1>Welcome to B&B Store</h1>
         <p>Discover amazing products at great prices.</p>
         <button href="#" class="cta-button">Shop Now</button>
       </div>
-      <div class="top-logo">
-        <img src="image-header.png" height="100%" width="100%" alt="B&B Bakery Logo"> 
-      </div> 
     </section>
 
     <!-- Product Showcase Section -->
-    <section class="product-showcase">
+    <section id="product-showcase" class="product-showcase">
       <div class="product">
-        <img src="Chocolate chip cookies.jpg" height="150" alt="Image Chocolate chip cookies">
+        <img src="image/Chocolate chip cookies.jpg" height="150" alt="Image Chocolate chip cookies">
         <!--Image src: https://pin.it/1ril4yo-->
         <div class = "product-content">
           <h2>Chocolate chip cookies</h2>
@@ -56,7 +53,7 @@
         </div>
       </div>
       <div class="product">
-        <img src="Durum wheat bread.jpg" height="150" alt="Image Durum wheat bread">
+        <img src="image/Durum wheat bread.jpg" height="150" alt="Image Durum wheat bread">
         <!--Image src: https://pin.it/64oJFHf-->
         <div class = "product-content">
           <h2>Durum wheat bread</h2>
@@ -65,7 +62,7 @@
         </div>
       </div>
       <div class="product">
-        <img src="French Brioche Loaf.jpg" height="150" alt="Image French Brioche Loaf">
+        <img src="image/French Brioche Loaf.jpg" height="150" alt="Image French Brioche Loaf">
         <!--Image src: https://pin.it/1m4d7tr-->
         <div class = "product-content">
           <h2>French Brioche Loaf</h2>
@@ -76,7 +73,7 @@
     </section>
 
     <!-- Customer Reviews Section -->
-    <section class="customer-reviews">
+    <section id="customer-reviews" class="customer-reviews">
       <h2>Reviews</h2>
       <div class="review">
         <p>"Great products and excellent service! I highly recommend this Bakery."</p>
@@ -89,7 +86,7 @@
     </section>
 
     <!-- Newsletter Subscription Form -->
-    <section class="newsletter">
+    <section id="newsletter" class="newsletter">
       <h2>Subscribe to Our Newsletter</h2>
       <form class="post">
         <div class="name-container">
@@ -102,15 +99,15 @@
   </main>
   <!-- Footer Section -->
   <footer>
-    <div class="contact-info">
+    <div id="contact-info" class="contact-info">
       <p>Contact Us: </p>
     </div>
     <div class="social-icons">
       <ul>
-        <li><a href="#"><img src="mail.png"  height="50"  alt="mail"></a></li>
-        <li><a href="#"><img src="facebook.png"  height="50"  alt="Facebook"></a></li>
-        <li><a href="#"><img src="twitter.png"  height="50"  alt="Twitter"></a></li>
-        <li><a href="#"><img src="instagram.png"  height="50"  alt="Instagram"></a></li>
+        <li><a href="#"><img src="image/mail.png"  height="50"  alt="mail"></a></li>
+        <li><a href="#"><img src="image/facebook.png"  height="50"  alt="Facebook"></a></li>
+        <li><a href="#"><img src="image/twitter.png"  height="50"  alt="Twitter"></a></li>
+        <li><a href="#"><img src="image/instagram.png"  height="50"  alt="Instagram"></a></li>
       </ul>
     </div>
     <div class="footer-links">
